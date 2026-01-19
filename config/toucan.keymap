@@ -37,14 +37,14 @@
         sym {
             display-name = "SYM";
             bindings = <
-&trans  &kp TAB  &kp N7  &kp N8  &kp N9  &kp PRCNT  &kp HASH  &kp UNDERSCORE  &kp EXCLAMATION  &kp ASTERISK  &kp COLON  &trans  &trans  &kp LA(LEFT_CONTROL)  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp ESCAPE  &kp EQUAL  &kp ENTER  &kp PLUS  &kp MINUS  &kp BACKSPACE  &trans  &trans  &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &kp AT_SIGN  &kp DELETE  &kp SLASH  &kp QUESTION  &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp TAB  &kp N7  &kp N8  &kp N9  &kp PRCNT  &kp HASH  &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON  &trans  &trans  &kp LA(LEFT_CONTROL)  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp ESCAPE  &kp EQUAL  &kp ENTER  &kp PLUS  &kp MINUS  &kp BACKSPACE  &trans  &trans  &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &kp AT_SIGN  &kp DELETE  &kp SLASH  &kp QUESTION  &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         adj {
             display-name = "ADJ";
             bindings = <
-&trans  &kp TAB  &kp GRAVE  &kp CARET  &kp AMPERSAND  &kp ENTER  &kp HASH  &kp UNDERSCORE  &kp ASTERISK  &trans  &trans  &trans  &trans  &kp LEFT_CONTROL  &kp LESS_THAN  &kp DOLLAR  &kp GREATER_THAN  &kp ESCAPE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp TILDE  &kp PERCENT  &kp PIPE  &kp NON_US_BACKSLASH  &kp GRAVE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp TAB  &kp GRAVE  &kp CARET  &kp AMPERSAND  &kp ENTER  &kp HASH  &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &trans  &trans  &trans  &kp LEFT_CONTROL  &kp LESS_THAN  &kp DOLLAR  &kp GREATER_THAN  &kp ESCAPE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp TILDE  &kp PERCENT  &kp PIPE  &kp NON_US_BACKSLASH  &kp GRAVE  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
