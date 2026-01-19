@@ -30,7 +30,7 @@
         nav {
             display-name = "NAV";
             bindings = <
-&trans  &kp N1  &kp LA(LEFT_ARROW)  &kp UP_ARROW  &kp LA(RIGHT_ARROW)  &kp PAGE_DOWN  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans  &trans  &kp LG(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(RIGHT_ARROW)  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  &trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LA(V))  &trans  &trans  &trans  &trans  &trans  &trans  &kp LGUI  &trans  &kp SPACE  &kp RET  &trans  &kp RALT
+&trans  &kp N1  &kp LA(LEFT_ARROW)  &kp UP_ARROW  &kp LA(RIGHT_ARROW)  &kp PAGE_DOWN  &kp RA(K)  &kp PAGE_UP  &kp RC(Y)  &kp PAGE_DOWN  &trans  &trans  &trans  &kp LG(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(RIGHT_ARROW)  &kp H  &kp J  &kp K  &kp L  &kp RIGHT_SHIFT  &trans  &trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LA(V))  &kp RA(J)  &kp RC(HOME)  &kp RC(E)  &kp RC(END)  &trans  &trans  &kp LGUI  &trans  &kp SPACE  &kp RET  &trans  &kp RALT
             >;
         };
 
