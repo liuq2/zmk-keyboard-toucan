@@ -15,6 +15,11 @@
             if-layers = <1 2>;
             then-layer = <3>;
         };
+
+        sys_5 {
+            if-layers = <2 5>;
+            then-layer = <6>;
+        };
     };
 
     keymap {
@@ -49,21 +54,21 @@
         };
 
         layer_4 {
-            display-name = "ADJ";
+            display-name = "right_2";
             bindings = <
 &trans  &trans  &kp LA(NUMBER_6)  &kp LS(F12)  &trans  &kp LA(B)  &trans  &trans  &kp RC(K)  &trans  &trans  &trans  &kp LEFT_BRACKET  &trans  &kp LA(D)  &kp F12  &kp LA(I)  &kp F11  &trans  &kp LA(NUMBER_3)  &kp RC(J)  &kp LA(NUMBER_3)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LA(C)  &kp LA(N5)  &trans  &kp LA(N7)  &kp LA(N9)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         layer_5 {
-            display-name = "ADJ";
+            display-name = "left_2";
             bindings = <
-&kp LG(X)  &kp LG(LA(V))  &kp LG(C)  &kp LG(V)  &kp LC(LG(LA(I)))  &kp LA(ENTER)  &kp HASH  &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON  &trans  &trans  &kp LEFT_ALT  &msc SCRL_UP  &mkp LCLK  &mkp RCLK  &kp ESCAPE  &kp EQUAL  &kp ENTER  &kp PLUS  &kp MINUS  &kp BACKSPACE  &trans  &trans  &studio_unlock  &msc SCRL_DOWN  &kp TAB  &kp LEFT_ALT  &kp LA(NUMBER_1)  &kp AT_SIGN  &kp DELETE  &kp SLASH  &kp QUESTION  &kp DOUBLE_QUOTES  &trans  &trans  &trans  &mo 6  &trans  &trans  &trans
+&kp LG(X)  &kp LG(LA(V))  &kp LG(C)  &kp LG(V)  &kp LC(LG(LA(I)))  &kp ENTER  &kp HASH  &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON  &trans  &trans  &kp LEFT_ALT  &msc SCRL_UP  &mkp LCLK  &mkp RCLK  &kp ESCAPE  &kp EQUAL  &kp ENTER  &kp PLUS  &kp MINUS  &kp BACKSPACE  &trans  &trans  &studio_unlock  &msc SCRL_DOWN  &kp TAB  &kp LEFT_ALT  &kp LA(NUMBER_1)  &kp AT_SIGN  &kp DELETE  &kp SLASH  &kp QUESTION  &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         layer_6 {
-            display-name = "ADJ";
+            display-name = "2_5";
             bindings = <
 &trans  &kp LG(LA(LC(A)))  &kp LG(LA(LC(E)))  &kp UP_ARROW  &kp LA(NUMBER_2)  &kp LA(LC(LG(B)))  &kp HASH  &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON  &trans  &trans  &kp LC(LEFT_ARROW)  &kp LC(LS(TAB))  &kp DOWN_ARROW  &kp LC(TAB)  &kp LC(RIGHT_ARROW)  &kp EQUAL  &kp ENTER  &kp PLUS  &kp MINUS  &kp BACKSPACE  &trans  &trans  &kp LG(L)  &kp LG(V)  &kp LC(LA(LEFT_ARROW))  &kp LA(LC(LG(H)))  &kp LA(LG(LC(G)))  &kp AT_SIGN  &kp DELETE  &kp SLASH  &kp QUESTION  &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
