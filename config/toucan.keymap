@@ -59,7 +59,7 @@
         layer_5 {
             display-name = "ADJ";
             bindings = <
-&kp LG(X)  &kp LG(LA(V))  &kp LG(C)  &kp LG(V)  &kp LC(LG(LA(I)))  &kp LA(ENTER)  &trans  &trans  &kp RC(K)  &trans  &trans  &trans  &trans  &kp LEFT_ALT  &msc SCRL_UP  &mkp LCLK  &mkp RCLK  &kp ESCAPE  &trans  &kp LA(NUMBER_3)  &kp RC(J)  &kp LA(NUMBER_3)  &trans  &trans  &trans  &studio_unlock  &msc SCRL_DOWN  &kp TAB  &kp LEFT_ALT  &kp LA(NUMBER_1)  &kp LA(N5)  &trans  &kp LA(N7)  &kp LA(N9)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LG(X)  &kp LG(LA(V))  &kp LG(C)  &kp LG(V)  &kp LC(LG(LA(I)))  &kp LA(ENTER)  &kp HASH  &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON  &trans  &trans  &kp LEFT_ALT  &msc SCRL_UP  &mkp LCLK  &mkp RCLK  &kp ESCAPE  &kp EQUAL  &kp ENTER  &kp PLUS  &kp MINUS  &kp BACKSPACE  &trans  &trans  &studio_unlock  &msc SCRL_DOWN  &kp TAB  &kp LEFT_ALT  &kp LA(NUMBER_1)  &kp AT_SIGN  &kp DELETE  &kp SLASH  &kp QUESTION  &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
