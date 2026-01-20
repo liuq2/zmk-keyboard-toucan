@@ -393,11 +393,13 @@
         new_tab {
             bindings = <&kp LG(T)>;
             key-positions = <25 16>;
+            layers = <0>;
         };
 
         close_tab {
             bindings = <&kp LG(W)>;
             key-positions = <25 26>;
+            layers = <0>;
         };
     };
 
