@@ -23,55 +23,22 @@
     };
 
     macros {
-        chatgpt: chatgpt {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings
-                = <&kp R &kp E &kp W &kp R &kp I &kp T &kp E &kp SPACE
-                   &kp S &kp E &kp N &kp T &kp E &kp N &kp C &kp E>
-                , <&macro_wait_time 100>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp V>
-                , <&macro_release &kp LCTRL>
-                , <&macro_wait_time 100>
-                , <&kp ENTER>
-                ;
-        };
-
         find_replace_03: find_replace_03 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings
-                = <&kp Y &kp I &kp Z &kp G &kp V &kp COLON &kp SLASH>
-                , <&macro_wait_time 100>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp R>
-                , <&macro_release &kp LCTRL>
-                , <&macro_wait_time 100>
-                , <&kp DOUBLE_QUOTES &kp SLASH>
-                ;
-        };
-
-        code: code {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings
-                = <&kp I &kp M &kp P &kp R &kp O &kp V &kp E &kp SPACE
-                   &kp C &kp O &kp D &kp E>
-                , <&macro_wait_time 20>
-                , <&macro_wait_time 100>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp V>
-                , <&macro_release &kp LCTRL>
-                , <&macro_wait_time 100>
-                , <&kp ENTER>
-                ;
+            bindings =
+                <&kp Y &kp I &kp Z &kp G &kp V &kp COLON &kp S &kp SLASH>,
+                <&macro_wait_time 100>,
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp R>,
+                <&macro_release>,
+                <&kp LCTRL>,
+                <&macro_wait_time 100>,
+                <&kp NON_US_BACKSLASH &kp DOUBLE_QUOTES &kp SLASH>;
         };
 
         code_05: code_05 {
@@ -79,89 +46,21 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings
-                = <&kp DOUBLE_QUOTES &kp PLUS>
-                , <&macro_wait_time 20>
-                , <&kp Y &kp I &kp W>
-                , <&macro_wait_time 50>
-                , <&kp G &kp V &kp COLON &kp SLASH>
-                , <&macro_wait_time 20>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp V>
-                , <&macro_release &kp LCTRL>
-                , <&macro_wait_time 20>
-                , <&kp SLASH>
-                ;
-        };
-
-        code_06: code_06 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings
-                = <&macro_wait_time 20>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp W>
-                , <&macro_release &kp LCTRL>
-                , <&kp H>
-                ;
-        };
-
-        code_07: code_07 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings
-                = <&macro_wait_time 20>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp W>
-                , <&macro_release &kp LCTRL>
-                , <&kp J>
-                ;
-        };
-
-        code_08: code_08 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings
-                = <&macro_wait_time 20>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp W>
-                , <&macro_release &kp LCTRL>
-                , <&kp K>
-                ;
-        };
-
-        code_09: code_09 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings
-                = <&macro_wait_time 20>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp W>
-                , <&macro_release &kp LCTRL>
-                , <&kp L>
-                ;
-        };
-
-        code_10: code_10 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings
-                = <&macro_wait_time 20>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp X>
-                , <&macro_release &kp LCTRL>
-                , <&kp G>
-                ;
+            bindings =
+                <&kp DOUBLE_QUOTES &kp PLUS>,
+                <&macro_wait_time 20>,
+                <&kp Y &kp I &kp W>,
+                <&macro_wait_time 50>,
+                <&kp G &kp V &kp COLON &kp SLASH>,
+                <&macro_wait_time 20>,
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp LCTRL>,
+                <&macro_wait_time 20>,
+                <&kp SLASH>;
         };
 
         code_11: code_11 {
@@ -169,15 +68,20 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings
-                = <&macro_wait_time 20>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp X>
-                , <&macro_release &kp LCTRL>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp B>
-                , <&macro_release &kp LCTRL>
-                ;
+            bindings =
+                <&macro_wait_time 20>,
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp X>,
+                <&macro_release>,
+                <&kp LCTRL>,
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp B>,
+                <&macro_release>,
+                <&kp LCTRL>;
         };
 
         code_12: code_12 {
@@ -185,13 +89,16 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings
-                = <&macro_wait_time 20>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp X>
-                , <&macro_release &kp LCTRL>
-                , <&kp N0>
-                ;
+            bindings =
+                <&macro_wait_time 20>,
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp X>,
+                <&macro_release>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp N0>;
         };
 
         code_13: code_13 {
@@ -199,109 +106,16 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings
-                = <&macro_wait_time 20>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp X>
-                , <&macro_release &kp LCTRL>
-                , <&kp NUMBER_1>
-                ;
-        };
-
-        code_14: code_14 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings
-                = <&macro_press &kp LCTRL &kp LSHFT>
-                , <&macro_tap &kp LEFT_ARROW>
-                , <&macro_release &kp LSHFT &kp LCTRL>
-                , <&kp DELETE>
-                ;
-        };
-
-        code_15: code_15 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings
-                = <&kp I>
-                , <&macro_wait_time 20>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp V>
-                , <&macro_release &kp LCTRL>
-                ;
-        };
-
-        code_16: code_16 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp K>
-                , <&macro_release &kp LCTRL>
-                , <&macro_wait_time 20>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp V>
-                , <&macro_release &kp LCTRL>
-                , <&macro_wait_time 20>
-                , <&kp ENTER>
-                ;
-        };
-
-        code_17: code_17 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings
-                = <&kp LEFT_BRACKET &kp LEFT_BRACKET>
-                , <&macro_wait_time 50>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp V>
-                , <&macro_release &kp LCTRL>
-                , <&kp RIGHT_BRACKET &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp RIGHT_BRACKET>
-                , <&kp LEFT_ARROW &kp LEFT_ARROW>
-                ;
-        };
-
-        code_18: code_18 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings
-                = <&kp R &kp E &kp W &kp R &kp I &kp T &kp E &kp SPACE
-                   &kp S &kp E &kp N &kp T &kp E &kp N &kp C &kp E>
-                , <&macro_wait_time 200>
-                , <&macro_press &kp LGUI>
-                , <&macro_tap &kp V>
-                , <&macro_release &kp LGUI>
-                , <&macro_wait_time 800>
-                , <&kp ENTER>
-                ;
-        };
-
-        code_19: code_19 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <30>;
-            tap-ms = <30>;
-            bindings
-                = <&kp I &kp M &kp P &kp R &kp O &kp V &kp E &kp SPACE
-                   &kp C &kp O &kp D &kp E>
-                , <&macro_wait_time 20>
-                , <&macro_wait_time 100>
-                , <&macro_press &kp LGUI>
-                , <&macro_tap &kp V>
-                , <&macro_release &kp LGUI>
-                , <&macro_wait_time 100>
-                , <&kp ENTER>
-                ;
+            bindings =
+                <&macro_wait_time 20>,
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp X>,
+                <&macro_release>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp NUMBER_1>;
         };
 
         code_20: code_20 {
@@ -309,13 +123,15 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings
-                = <&macro_press &kp LALT &kp LSHFT>
-                , <&macro_tap &kp LEFT_ARROW>
-                , <&macro_release &kp LSHFT &kp LALT>
-                , <&macro_wait_time 20>
-                , <&kp DELETE>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LALT &kp LSHFT>,
+                <&macro_tap>,
+                <&kp LEFT_ARROW>,
+                <&macro_release>,
+                <&kp LSHFT &kp LALT>,
+                <&macro_wait_time 20>,
+                <&kp DELETE>;
         };
 
         code_21: code_21 {
@@ -323,13 +139,15 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings
-                = <&kp I>
-                , <&macro_wait_time 20>
-                , <&macro_press &kp LGUI>
-                , <&macro_tap &kp V>
-                , <&macro_release &kp LGUI>
-                ;
+            bindings =
+                <&kp I>,
+                <&macro_wait_time 20>,
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp LGUI>;
         };
 
         code_22: code_22 {
@@ -337,17 +155,22 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp K>
-                , <&macro_release &kp LGUI>
-                , <&macro_wait_time 20>
-                , <&macro_press &kp LGUI>
-                , <&macro_tap &kp V>
-                , <&macro_release &kp LGUI>
-                , <&macro_wait_time 20>
-                , <&kp ENTER>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp K>,
+                <&macro_release>,
+                <&kp LGUI>,
+                <&macro_wait_time 20>,
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp LGUI>,
+                <&macro_wait_time 20>,
+                <&kp ENTER>;
         };
 
         code_23: code_23 {
@@ -355,15 +178,15 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings
-                = <&kp LEFT_BRACKET &kp LEFT_BRACKET>
-                , <&macro_wait_time 20>
-                , <&macro_press &kp LGUI>
-                , <&macro_tap &kp V>
-                , <&macro_release &kp LGUI>
-                , <&kp RIGHT_BRACKET &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp RIGHT_BRACKET>
-                , <&kp LEFT_ARROW &kp LEFT_ARROW>
-                ;
+            bindings =
+                <&kp LEFT_BRACKET &kp LEFT_BRACKET>,
+                <&macro_wait_time 20>,
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp LGUI &kp RIGHT_BRACKET &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW &kp LEFT_ARROW>;
         };
 
         code_24: code_24 {
@@ -371,21 +194,29 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings
-                = <&macro_press &kp LGUI>
-                , <&macro_tap &kp C>
-                , <&macro_release &kp LGUI>
-                , <&macro_wait_time 50>
-                , <&macro_press &kp LGUI>
-                , <&macro_tap &kp F>
-                , <&macro_release &kp LGUI>
-                , <&macro_wait_time 50>
-                , <&macro_press &kp LGUI>
-                , <&macro_tap &kp V>
-                , <&macro_release &kp LGUI>
-                , <&macro_wait_time 50>
-                , <&kp ENTER>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp LGUI>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp F>,
+                <&macro_release>,
+                <&kp LGUI>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp LGUI>,
+                <&macro_wait_time 50>,
+                <&kp ENTER>;
         };
 
         code_25: code_25 {
@@ -393,17 +224,22 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp S>
-                , <&macro_release &kp LCTRL>
-                , <&macro_wait_time 50>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp R>
-                , <&macro_release &kp LCTRL>
-                , <&macro_wait_time 50>
-                , <&kp ENTER>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_release>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp R>,
+                <&macro_release>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp ENTER>;
         };
 
         code_26: code_26 {
@@ -411,15 +247,20 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp C>
-                , <&macro_release &kp LCTRL>
-                , <&macro_wait_time 50>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp K>
-                , <&macro_release &kp LCTRL>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp K>,
+                <&macro_release>,
+                <&kp LCTRL>;
         };
 
         code_27: code_27 {
@@ -427,15 +268,20 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp X>
-                , <&macro_release &kp LCTRL>
-                , <&macro_wait_time 50>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp Q>
-                , <&macro_release &kp LCTRL>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp X>,
+                <&macro_release>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp Q>,
+                <&macro_release>,
+                <&kp LCTRL>;
         };
 
         code_28: code_28 {
@@ -443,21 +289,29 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &kp C>
-                , <&macro_release &kp LCTRL>
-                , <&macro_wait_time 50>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp O>
-                , <&macro_release &kp LCTRL>
-                , <&macro_wait_time 50>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp X>
-                , <&macro_release &kp LCTRL>
-                , <&macro_wait_time 50>
-                , <&kp NUMBER_1>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp O>,
+                <&macro_release>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp X>,
+                <&macro_release>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp NUMBER_1>;
         };
 
         code_29: code_29 {
@@ -465,16 +319,21 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings
-                = <&kp Y &kp I &kp Z>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp S>
-                , <&macro_release &kp LCTRL>
-                , <&macro_wait_time 50>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp Y>
-                , <&macro_release &kp LCTRL>
-                ;
+            bindings =
+                <&kp Y &kp I &kp Z>,
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_release>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp Y>,
+                <&macro_release>,
+                <&kp LCTRL>;
         };
 
         code_30: code_30 {
@@ -482,28 +341,37 @@
             #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
-            bindings
-                = <&kp Y &kp I &kp Z &kp PLUS &kp Q &kp Q>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp R>
-                , <&macro_release &kp LCTRL>
-                , <&kp DOUBLE_QUOTES>
-                , <&kp ENTER>
-                , <&macro_wait_time 50>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp C>
-                , <&macro_release &kp LCTRL>
-                , <&macro_wait_time 50>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp O>
-                , <&macro_release &kp LCTRL>
-                , <&macro_wait_time 50>
-                , <&macro_press &kp LCTRL>
-                , <&macro_tap &kp X>
-                , <&macro_release &kp LCTRL>
-                , <&macro_wait_time 50>
-                , <&kp NUMBER_1>
-                ;
+            bindings =
+                <&kp Y &kp I &kp Z &kp PLUS &kp Q &kp Q>,
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp R>,
+                <&macro_release>,
+                <&kp LCTRL &kp DOUBLE_QUOTES &kp ENTER>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp O>,
+                <&macro_release>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp X>,
+                <&macro_release>,
+                <&kp LCTRL>,
+                <&macro_wait_time 50>,
+                <&kp NUMBER_1>;
         };
     };
 
@@ -541,21 +409,21 @@
         layer_4 {
             display-name = "right_2";
             bindings = <
-&trans  &trans  &kp LA(NUMBER_6)  &kp LS(F12)  &trans  &kp LA(B)  &trans  &trans  &kp RC(K)  &trans  &trans  &trans  &kp LEFT_BRACKET  &trans  &kp LA(D)  &kp F12  &kp LA(I)  &kp F11  &trans  &kp LA(NUMBER_3)  &kp RC(J)  &kp LA(NUMBER_3)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LA(C)  &kp LA(N5)  &trans  &kp LA(N7)  &kp LA(N9)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LA(NUMBER_6)  &kp LS(F12)  &trans  &kp LA(B)  &find_replace_03  &code_12  &kp RC(K)  &code_13  &trans  &trans  &kp LEFT_BRACKET  &trans  &kp LA(D)  &kp F12  &kp LA(I)  &kp F11  &trans  &kp LA(NUMBER_3)  &kp RC(J)  &kp LA(NUMBER_3)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LA(C)  &kp LA(N5)  &code_11  &kp LA(N7)  &kp LA(N9)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         layer_5 {
             display-name = "left_2";
             bindings = <
-&kp LG(X)  &kp LG(LA(V))  &kp LG(C)  &kp LG(V)  &kp LC(LG(LA(I)))  &kp ENTER  &kp HASH  &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON  &trans  &kp LEFT_BRACKET  &kp LEFT_ALT  &msc SCRL_UP  &mkp LCLK  &mkp RCLK  &kp ESCAPE  &kp EQUAL  &kp ENTER  &kp PLUS  &kp MINUS  &kp BACKSPACE  &trans  &trans  &studio_unlock  &msc SCRL_DOWN  &kp TAB  &kp LEFT_ALT  &mo 2  &kp AT_SIGN  &kp DELETE  &kp SLASH  &kp QUESTION  &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LG(X)  &kp LG(LA(V))  &kp LG(C)  &kp LG(V)  &kp LC(LG(LA(I)))  &kp ENTER  &kp HASH  &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON  &trans  &code_24  &kp LEFT_ALT  &msc SCRL_UP  &mkp LCLK  &mkp RCLK  &kp ESCAPE  &kp EQUAL  &kp ENTER  &kp PLUS  &kp MINUS  &kp BACKSPACE  &trans  &trans  &studio_unlock  &msc SCRL_DOWN  &kp TAB  &kp LEFT_ALT  &mo 2  &kp AT_SIGN  &kp DELETE  &kp SLASH  &kp QUESTION  &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         layer_6 {
             display-name = "2_5";
             bindings = <
-&trans  &kp LG(LA(LC(A)))  &kp LG(LA(LC(E)))  &kp UP_ARROW  &kp LA(NUMBER_2)  &kp LA(LC(LG(B)))  &kp HASH  &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON  &trans  &kp LEFT_BRACKET  &kp LC(LEFT_ARROW)  &kp LC(LS(TAB))  &kp DOWN_ARROW  &kp LC(TAB)  &kp LC(RIGHT_ARROW)  &kp EQUAL  &kp ENTER  &kp PLUS  &kp MINUS  &kp BACKSPACE  &trans  &trans  &kp LG(L)  &kp LG(V)  &kp LC(LA(LEFT_ARROW))  &kp LA(LC(LG(H)))  &kp LA(LG(LC(G)))  &kp AT_SIGN  &kp DELETE  &kp SLASH  &kp QUESTION  &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(LA(LC(A)))  &kp LG(LA(LC(E)))  &kp UP_ARROW  &kp LA(NUMBER_2)  &kp LA(LC(LG(B)))  &kp HASH  &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON  &trans  &kp LEFT_BRACKET  &kp LC(LEFT_ARROW)  &kp LC(LS(TAB))  &kp DOWN_ARROW  &kp LC(TAB)  &kp LC(RIGHT_ARROW)  &kp EQUAL  &kp F2  &kp PLUS  &kp MINUS  &code_20  &trans  &trans  &kp LG(L)  &kp LG(V)  &kp LC(LA(LEFT_ARROW))  &kp LA(LC(LG(H)))  &kp LA(LG(LC(G)))  &kp AT_SIGN  &kp DELETE  &kp SLASH  &kp QUESTION  &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
