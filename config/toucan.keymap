@@ -186,7 +186,9 @@
                 <&macro_tap>,
                 <&kp V>,
                 <&macro_release>,
-                <&kp LGUI &kp RIGHT_BRACKET &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW &kp LEFT_ARROW>;
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp RIGHT_BRACKET &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp RIGHT_BRACKET &kp LEFT_ARROW &kp LEFT_ARROW>;
         };
 
         code_24: code_24 {
@@ -216,6 +218,7 @@
                 <&macro_release>,
                 <&kp LGUI>,
                 <&macro_wait_time 50>,
+                <&macro_tap>,
                 <&kp ENTER>;
         };
 
@@ -239,6 +242,7 @@
                 <&macro_release>,
                 <&kp LCTRL>,
                 <&macro_wait_time 50>,
+                <&macro_tap>,
                 <&kp ENTER>;
         };
 
@@ -260,7 +264,7 @@
                 <&macro_tap>,
                 <&kp K>,
                 <&macro_release>,
-                <&kp LCTRL>;
+                <&macro_wait_time 50>;
         };
 
         code_27: code_27 {
@@ -281,7 +285,7 @@
                 <&macro_tap>,
                 <&kp Q>,
                 <&macro_release>,
-                <&kp LCTRL>;
+                <&macro_wait_time 50>;
         };
 
         code_28: code_28 {
@@ -311,6 +315,7 @@
                 <&macro_release>,
                 <&kp LCTRL>,
                 <&macro_wait_time 50>,
+                <&macro_tap>,
                 <&kp NUMBER_1>;
         };
 
@@ -333,7 +338,7 @@
                 <&macro_tap>,
                 <&kp Y>,
                 <&macro_release>,
-                <&kp LCTRL>;
+                <&macro_wait_time 50>;
         };
 
         code_30: code_30 {
@@ -348,7 +353,9 @@
                 <&macro_tap>,
                 <&kp R>,
                 <&macro_release>,
-                <&kp LCTRL &kp DOUBLE_QUOTES &kp ENTER>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp NON_US_BACKSLASH &kp DOUBLE_QUOTES &kp ENTER>,
                 <&macro_wait_time 50>,
                 <&macro_press>,
                 <&kp LCTRL>,
@@ -371,6 +378,7 @@
                 <&macro_release>,
                 <&kp LCTRL>,
                 <&macro_wait_time 50>,
+                <&macro_tap>,
                 <&kp NUMBER_1>;
         };
     };
