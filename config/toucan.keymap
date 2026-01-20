@@ -35,14 +35,14 @@
         nav {
             display-name = "NAV";
             bindings = <
-&trans  &kp PAGE_UP  &kp LA(LEFT_ARROW)  &kp UP_ARROW  &kp LA(RIGHT_ARROW)  &kp PAGE_DOWN  &kp RA(K)  &kp PAGE_UP  &kp RC(Y)  &kp PAGE_DOWN  &trans  &trans  &trans  &kp LG(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(RIGHT_ARROW)  &kp H  &kp J  &kp K  &kp L  &kp RIGHT_SHIFT  &trans  &trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LA(V))  &kp RA(J)  &kp RC(HOME)  &kp RC(E)  &kp RC(END)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp PAGE_UP  &kp LA(LEFT_ARROW)  &kp UP_ARROW  &kp LA(RIGHT_ARROW)  &kp PAGE_DOWN  &kp RA(K)  &kp PAGE_UP  &kp RC(Y)  &kp PAGE_DOWN  &trans  &trans  &kp LEFT_BRACKET  &kp LG(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(RIGHT_ARROW)  &kp H  &kp J  &kp K  &kp L  &kp RIGHT_SHIFT  &trans  &trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LA(V))  &kp RA(J)  &kp RC(HOME)  &kp RC(E)  &kp RC(END)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         sym {
             display-name = "SYM";
             bindings = <
-&trans  &kp TAB  &kp N7  &kp N8  &kp N9  &kp PRCNT  &kp HASH  &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON  &trans  &trans  &kp LEFT_ALT  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp ESCAPE  &kp EQUAL  &kp ENTER  &kp PLUS  &kp MINUS  &kp BACKSPACE  &trans  &trans  &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &kp AT_SIGN  &kp DELETE  &kp SLASH  &kp QUESTION  &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp TAB  &kp N7  &kp N8  &kp N9  &kp ENTER  &kp HASH  &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON  &trans  &trans  &kp LEFT_ALT  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp ESCAPE  &kp EQUAL  &kp ENTER  &kp PLUS  &kp MINUS  &kp BACKSPACE  &trans  &trans  &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &kp AT_SIGN  &kp DELETE  &kp SLASH  &kp QUESTION  &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
