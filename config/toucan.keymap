@@ -387,55 +387,90 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        new_tab {
+            bindings = <&kp LG(T)>;
+            key-positions = <25 16>;
+        };
+
+        close_tab {
+            bindings = <&kp LG(W)>;
+            key-positions = <25 26>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         base {
             display-name = "BASE";
             bindings = <
-&kp LEFT_PARENTHESIS  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp SEMICOLON  &kp RIGHT_PARENTHESIS  &sk LEFT_SHIFT  &kp A  &kp R  &kp S  &kp T  &kp G  &kp M  &kp N  &kp E  &kp I  &kp O  &mt RIGHT_CONTROL RIGHT_BRACKET  &kp LEFT_BRACE  &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp SQT  &kp RIGHT_BRACE  &kp LEFT_CONTROL  &mo 5  &mo 2  &lt 1 SPACE  &mo 4  &kp RIGHT_SHIFT
+&kp LEFT_PARENTHESIS  &kp Q  &kp W  &kp F             &kp P  &kp B  &kp J        &kp L  &kp U            &kp Y    &kp SEMICOLON  &kp RIGHT_PARENTHESIS
+&sk LEFT_SHIFT        &kp A  &kp R  &kp S             &kp T  &kp G  &kp M        &kp N  &kp E            &kp I    &kp O          &mt RIGHT_CONTROL RIGHT_BRACKET
+&kp LEFT_BRACE        &kp Z  &kp X  &kp C             &kp D  &kp V  &kp K        &kp H  &kp COMMA        &kp DOT  &kp SQT        &kp RIGHT_BRACE
+                                    &kp LEFT_CONTROL  &mo 5  &mo 2  &lt 1 SPACE  &mo 4  &kp RIGHT_SHIFT
             >;
         };
 
         nav {
             display-name = "NAV";
             bindings = <
-&trans  &kp PAGE_UP  &kp LA(LEFT_ARROW)  &kp UP_ARROW  &kp LA(RIGHT_ARROW)  &kp PAGE_DOWN  &kp RA(K)  &kp PAGE_UP  &kp RC(Y)  &kp PAGE_DOWN  &trans  &trans  &kp LEFT_BRACKET  &kp LG(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LG(RIGHT_ARROW)  &kp H  &kp J  &kp K  &kp L  &kp RIGHT_SHIFT  &trans  &trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(LA(V))  &kp RA(J)  &kp RC(HOME)  &kp RC(E)  &kp RC(END)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans            &kp PAGE_UP         &kp LA(LEFT_ARROW)  &kp UP_ARROW    &kp LA(RIGHT_ARROW)  &kp PAGE_DOWN        &kp RA(K)  &kp PAGE_UP   &kp RC(Y)  &kp PAGE_DOWN  &trans           &trans
+&kp LEFT_BRACKET  &kp LG(LEFT_ARROW)  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp LG(RIGHT_ARROW)  &kp H      &kp J         &kp K      &kp L          &kp RIGHT_SHIFT  &trans
+&trans            &kp LG(Z)           &kp LG(X)           &kp LG(C)       &kp LG(V)            &kp LG(LA(V))        &kp RA(J)  &kp RC(HOME)  &kp RC(E)  &kp RC(END)    &trans           &trans
+                                                          &trans          &trans               &trans               &trans     &trans        &trans
             >;
         };
 
         sym {
             display-name = "SYM";
             bindings = <
-&trans  &kp TAB  &kp N7  &kp N8  &kp N9  &kp ENTER  &kp HASH  &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON  &trans  &kp LEFT_BRACKET  &kp LEFT_ALT  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp ESCAPE  &kp EQUAL  &kp ENTER  &kp PLUS  &kp MINUS  &kp BACKSPACE  &trans  &trans  &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &kp AT_SIGN  &kp DELETE  &kp SLASH  &kp QUESTION  &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans            &kp TAB       &kp N7        &kp N8        &kp N9        &kp ENTER   &kp HASH     &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON          &trans
+&kp LEFT_BRACKET  &kp LEFT_ALT  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ESCAPE  &kp EQUAL    &kp ENTER       &kp PLUS      &kp MINUS        &kp BACKSPACE      &trans
+&trans            &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &kp AT_SIGN  &kp DELETE      &kp SLASH     &kp QUESTION     &kp DOUBLE_QUOTES  &trans
+                                              &trans        &trans        &trans      &trans       &trans          &trans
             >;
         };
 
         adj {
             display-name = "ADJ";
             bindings = <
-&trans  &kp TAB  &kp GRAVE  &kp CARET  &kp AMPERSAND  &kp ENTER  &kp HASH  &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON  &trans  &kp LEFT_BRACKET  &kp LEFT_ALT  &kp LESS_THAN  &kp DOLLAR  &kp GREATER_THAN  &kp ESCAPE  &kp EQUAL  &kp ENTER  &kp PLUS  &kp MINUS  &kp BACKSPACE  &trans  &trans  &kp TILDE  &kp PERCENT  &kp PIPE  &kp NON_US_BACKSLASH  &kp GRAVE  &kp AT_SIGN  &kp DELETE  &kp SLASH  &kp QUESTION  &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans            &kp TAB       &kp GRAVE      &kp CARET   &kp AMPERSAND         &kp ENTER   &kp HASH     &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON          &trans
+&kp LEFT_BRACKET  &kp LEFT_ALT  &kp LESS_THAN  &kp DOLLAR  &kp GREATER_THAN      &kp ESCAPE  &kp EQUAL    &kp ENTER       &kp PLUS      &kp MINUS        &kp BACKSPACE      &trans
+&trans            &kp TILDE     &kp PERCENT    &kp PIPE    &kp NON_US_BACKSLASH  &kp GRAVE   &kp AT_SIGN  &kp DELETE      &kp SLASH     &kp QUESTION     &kp DOUBLE_QUOTES  &trans
+                                               &trans      &trans                &trans      &trans       &trans          &trans
             >;
         };
 
         layer_4 {
             display-name = "right_2";
             bindings = <
-&trans  &code_27  &kp LA(NUMBER_6)  &kp LS(F12)  &code_30  &kp LA(B)  &find_replace_03  &code_12  &kp RC(K)  &code_13  &trans  &trans  &kp LEFT_BRACKET  &trans  &kp LA(D)  &kp F12  &kp LA(I)  &kp F11  &trans  &kp LA(NUMBER_3)  &kp RC(J)  &kp LA(NUMBER_3)  &trans  &trans  &trans  &code_28  &code_29  &code_26  &code_25  &kp LA(C)  &kp LA(N5)  &code_11  &kp LA(N7)  &kp LA(N9)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans            &code_27  &kp LA(NUMBER_6)  &kp LS(F12)  &code_30   &kp LA(B)  &find_replace_03  &code_12          &kp RC(K)   &code_13          &trans  &trans
+&kp LEFT_BRACKET  &trans    &kp LA(D)         &kp F12      &kp LA(I)  &kp F11    &trans            &kp LA(NUMBER_3)  &kp RC(J)   &kp LA(NUMBER_3)  &trans  &trans
+&trans            &code_28  &code_29          &code_26     &code_25   &kp LA(C)  &kp LA(N5)        &code_11          &kp LA(N7)  &kp LA(N9)        &trans  &trans
+                                              &trans       &trans     &trans     &trans            &trans            &trans
             >;
         };
 
         layer_5 {
             display-name = "left_2";
             bindings = <
-&kp LG(X)  &kp LG(LA(V))  &kp LG(C)  &kp LG(V)  &kp LC(LG(LA(I)))  &kp ENTER  &kp HASH  &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON  &trans  &code_24  &kp LEFT_ALT  &msc SCRL_UP  &mkp LCLK  &mkp RCLK  &kp ESCAPE  &kp EQUAL  &kp ENTER  &kp PLUS  &kp MINUS  &kp BACKSPACE  &trans  &bt BT_SEL 1  &studio_unlock  &msc SCRL_DOWN  &kp TAB  &kp LEFT_ALT  &mo 2  &kp AT_SIGN  &kp DELETE  &kp SLASH  &kp QUESTION  &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LG(X)     &kp LG(LA(V))   &kp LG(C)       &kp LG(V)  &kp LC(LG(LA(I)))  &kp ENTER   &kp HASH     &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON          &trans
+&code_24      &kp LEFT_ALT    &msc SCRL_UP    &mkp LCLK  &mkp RCLK          &kp ESCAPE  &kp EQUAL    &kp ENTER       &kp PLUS      &kp MINUS        &kp BACKSPACE      &trans
+&bt BT_SEL 1  &studio_unlock  &msc SCRL_DOWN  &kp TAB    &kp LEFT_ALT       &mo 2       &kp AT_SIGN  &kp DELETE      &kp SLASH     &kp QUESTION     &kp DOUBLE_QUOTES  &trans
+                                              &trans     &trans             &trans      &trans       &trans          &trans
             >;
         };
 
         layer_6 {
             display-name = "2_5";
             bindings = <
-&trans  &kp LG(LA(LC(A)))  &kp LG(LA(LC(E)))  &kp UP_ARROW  &kp LA(NUMBER_2)  &kp LA(LC(LG(B)))  &kp HASH  &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON  &trans  &kp LEFT_BRACKET  &kp LC(LEFT_ARROW)  &kp LC(LS(TAB))  &kp DOWN_ARROW  &kp LC(TAB)  &kp LC(RIGHT_ARROW)  &kp EQUAL  &kp F2  &kp PLUS  &kp MINUS  &code_20  &trans  &trans  &kp LG(L)  &kp LG(V)  &kp LC(LA(LEFT_ARROW))  &kp LA(LC(LG(H)))  &kp LA(LG(LC(G)))  &kp AT_SIGN  &kp DELETE  &kp SLASH  &kp QUESTION  &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans            &kp LG(LA(LC(A)))   &kp LG(LA(LC(E)))  &kp UP_ARROW            &kp LA(NUMBER_2)   &kp LA(LC(LG(B)))    &kp HASH     &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON          &trans
+&kp LEFT_BRACKET  &kp LC(LEFT_ARROW)  &kp LC(LS(TAB))    &kp DOWN_ARROW          &kp LC(TAB)        &kp LC(RIGHT_ARROW)  &kp EQUAL    &kp F2          &kp PLUS      &kp MINUS        &code_20           &trans
+&trans            &kp LG(L)           &kp LG(V)          &kp LC(LA(LEFT_ARROW))  &kp LA(LC(LG(H)))  &kp LA(LG(LC(G)))    &kp AT_SIGN  &kp DELETE      &kp SLASH     &kp QUESTION     &kp DOUBLE_QUOTES  &trans
+                                                         &trans                  &trans             &trans               &trans       &trans          &trans
             >;
         };
     };
