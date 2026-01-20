@@ -23,6 +23,15 @@
         };
     };
 
+    behaviors {
+        sk_250: sk_250 {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <250>;
+        };
+    };
+
     macros {
         find_replace_03: find_replace_03 {
             compatible = "zmk,behavior-macro";
@@ -410,7 +419,7 @@
             display-name = "BASE";
             bindings = <
 &kp LEFT_PARENTHESIS  &kp Q  &kp W  &kp F             &kp P  &kp B  &kp J        &kp L  &kp U            &kp Y    &kp SEMICOLON  &kp RIGHT_PARENTHESIS
-&sk LEFT_SHIFT        &kp A  &kp R  &kp S             &kp T  &kp G  &kp M        &kp N  &kp E            &kp I    &kp O          &mt RIGHT_CONTROL RIGHT_BRACKET
+    &sk_250 LEFT_SHIFT    &kp A  &kp R  &kp S             &kp T  &kp G  &kp M        &kp N  &kp E            &kp I    &kp O          &mt RIGHT_CONTROL RIGHT_BRACKET
 &kp LEFT_BRACE        &kp Z  &kp X  &kp C             &kp D  &kp V  &kp K        &kp H  &kp COMMA        &kp DOT  &kp SQT        &kp RIGHT_BRACE
                                     &kp LEFT_CONTROL  &mo 5  &mo 2  &lt 1 SPACE  &mo 4  &kp RIGHT_SHIFT
             >;
