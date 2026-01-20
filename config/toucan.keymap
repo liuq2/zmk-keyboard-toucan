@@ -420,7 +420,7 @@
         layer_4 {
             display-name = "right_2";
             bindings = <
-&trans  &trans  &kp LA(NUMBER_6)  &kp LS(F12)  &trans  &kp LA(B)  &find_replace_03  &code_12  &kp RC(K)  &code_13  &trans  &trans  &kp LEFT_BRACKET  &trans  &kp LA(D)  &kp F12  &kp LA(I)  &kp F11  &trans  &kp LA(NUMBER_3)  &kp RC(J)  &kp LA(NUMBER_3)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LA(C)  &kp LA(N5)  &code_11  &kp LA(N7)  &kp LA(N9)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &code_27  &kp LA(NUMBER_6)  &kp LS(F12)  &code_30  &kp LA(B)  &find_replace_03  &code_12  &kp RC(K)  &code_13  &trans  &trans  &kp LEFT_BRACKET  &trans  &kp LA(D)  &kp F12  &kp LA(I)  &kp F11  &trans  &kp LA(NUMBER_3)  &kp RC(J)  &kp LA(NUMBER_3)  &trans  &trans  &trans  &code_28  &code_29  &code_26  &code_25  &kp LA(C)  &kp LA(N5)  &code_11  &kp LA(N7)  &kp LA(N9)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
