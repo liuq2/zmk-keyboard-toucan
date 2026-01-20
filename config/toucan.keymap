@@ -42,14 +42,14 @@
         sym {
             display-name = "SYM";
             bindings = <
-&trans  &kp TAB  &kp N7  &kp N8  &kp N9  &kp ENTER  &kp HASH  &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON  &trans  &trans  &kp LEFT_ALT  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp ESCAPE  &kp EQUAL  &kp ENTER  &kp PLUS  &kp MINUS  &kp BACKSPACE  &trans  &trans  &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &kp AT_SIGN  &kp DELETE  &kp SLASH  &kp QUESTION  &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp TAB  &kp N7  &kp N8  &kp N9  &kp ENTER  &kp HASH  &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON  &trans  &kp LEFT_BRACKET  &kp LEFT_ALT  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp ESCAPE  &kp EQUAL  &kp ENTER  &kp PLUS  &kp MINUS  &kp BACKSPACE  &trans  &trans  &kp N0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD  &kp AT_SIGN  &kp DELETE  &kp SLASH  &kp QUESTION  &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         adj {
             display-name = "ADJ";
             bindings = <
-&trans  &kp TAB  &kp GRAVE  &kp CARET  &kp AMPERSAND  &kp ENTER  &kp HASH  &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON  &trans  &trans  &kp LEFT_ALT  &kp LESS_THAN  &kp DOLLAR  &kp GREATER_THAN  &kp ESCAPE  &kp EQUAL  &kp ENTER  &kp PLUS  &kp MINUS  &kp BACKSPACE  &trans  &trans  &kp TILDE  &kp PERCENT  &kp PIPE  &kp NON_US_BACKSLASH  &kp GRAVE  &kp AT_SIGN  &kp DELETE  &kp SLASH  &kp QUESTION  &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp TAB  &kp GRAVE  &kp CARET  &kp AMPERSAND  &kp ENTER  &kp HASH  &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON  &trans  &kp LEFT_BRACKET  &kp LEFT_ALT  &kp LESS_THAN  &kp DOLLAR  &kp GREATER_THAN  &kp ESCAPE  &kp EQUAL  &kp ENTER  &kp PLUS  &kp MINUS  &kp BACKSPACE  &trans  &trans  &kp TILDE  &kp PERCENT  &kp PIPE  &kp NON_US_BACKSLASH  &kp GRAVE  &kp AT_SIGN  &kp DELETE  &kp SLASH  &kp QUESTION  &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -63,14 +63,14 @@
         layer_5 {
             display-name = "left_2";
             bindings = <
-&kp LG(X)  &kp LG(LA(V))  &kp LG(C)  &kp LG(V)  &kp LC(LG(LA(I)))  &kp ENTER  &kp HASH  &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON  &trans  &trans  &kp LEFT_ALT  &msc SCRL_UP  &mkp LCLK  &mkp RCLK  &kp ESCAPE  &kp EQUAL  &kp ENTER  &kp PLUS  &kp MINUS  &kp BACKSPACE  &trans  &trans  &studio_unlock  &msc SCRL_DOWN  &kp TAB  &kp LEFT_ALT  &kp LA(NUMBER_1)  &kp AT_SIGN  &kp DELETE  &kp SLASH  &kp QUESTION  &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LG(X)  &kp LG(LA(V))  &kp LG(C)  &kp LG(V)  &kp LC(LG(LA(I)))  &kp ENTER  &kp HASH  &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON  &trans  &kp LEFT_BRACKET  &kp LEFT_ALT  &msc SCRL_UP  &mkp LCLK  &mkp RCLK  &kp ESCAPE  &kp EQUAL  &kp ENTER  &kp PLUS  &kp MINUS  &kp BACKSPACE  &trans  &trans  &studio_unlock  &msc SCRL_DOWN  &kp TAB  &kp LEFT_ALT  &kp LA(NUMBER_1)  &kp AT_SIGN  &kp DELETE  &kp SLASH  &kp QUESTION  &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         layer_6 {
             display-name = "2_5";
             bindings = <
-&trans  &kp LG(LA(LC(A)))  &kp LG(LA(LC(E)))  &kp UP_ARROW  &kp LA(NUMBER_2)  &kp LA(LC(LG(B)))  &kp HASH  &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON  &trans  &trans  &kp LC(LEFT_ARROW)  &kp LC(LS(TAB))  &kp DOWN_ARROW  &kp LC(TAB)  &kp LC(RIGHT_ARROW)  &kp EQUAL  &kp ENTER  &kp PLUS  &kp MINUS  &kp BACKSPACE  &trans  &trans  &kp LG(L)  &kp LG(V)  &kp LC(LA(LEFT_ARROW))  &kp LA(LC(LG(H)))  &kp LA(LG(LC(G)))  &kp AT_SIGN  &kp DELETE  &kp SLASH  &kp QUESTION  &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(LA(LC(A)))  &kp LG(LA(LC(E)))  &kp UP_ARROW  &kp LA(NUMBER_2)  &kp LA(LC(LG(B)))  &kp HASH  &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON  &trans  &kp LEFT_BRACKET  &kp LC(LEFT_ARROW)  &kp LC(LS(TAB))  &kp DOWN_ARROW  &kp LC(TAB)  &kp LC(RIGHT_ARROW)  &kp EQUAL  &kp ENTER  &kp PLUS  &kp MINUS  &kp BACKSPACE  &trans  &trans  &kp LG(L)  &kp LG(V)  &kp LC(LA(LEFT_ARROW))  &kp LA(LC(LG(H)))  &kp LA(LG(LC(G)))  &kp AT_SIGN  &kp DELETE  &kp SLASH  &kp QUESTION  &kp DOUBLE_QUOTES  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
