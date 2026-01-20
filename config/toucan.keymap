@@ -264,7 +264,7 @@
                 <&macro_tap>,
                 <&kp K>,
                 <&macro_release>,
-                <&kp LCTRL>;
+                <&kp LCTRL>,
                 <&macro_wait_time 50>;
         };
 
@@ -286,7 +286,7 @@
                 <&macro_tap>,
                 <&kp Q>,
                 <&macro_release>,
-                <&kp LCTRL>;
+                <&kp LCTRL>,
                 <&macro_wait_time 50>;
         };
 
@@ -340,7 +340,7 @@
                 <&macro_tap>,
                 <&kp Y>,
                 <&macro_release>,
-                <&kp LCTRL>;
+                <&kp LCTRL>,
                 <&macro_wait_time 50>;
         };
 
