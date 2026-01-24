@@ -31,6 +31,16 @@
             release-after-ms = <250>;
             quick-release;
         };
+
+        spc_nav: spc_nav {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SPC_NAV";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <175>;
+            quick-tap-ms = <120>;
+            bindings = <&mo &kp>;
+        };
     };
 
     macros {
@@ -422,7 +432,7 @@
 &kp LEFT_PARENTHESIS  &kp Q  &kp W  &kp F             &kp P  &kp B  &kp J        &kp L  &kp U            &kp Y    &kp SEMICOLON  &kp RIGHT_PARENTHESIS
 &sk_250 LEFT_SHIFT    &kp A  &kp R  &kp S             &kp T  &kp G  &kp M        &kp N  &kp E            &kp I    &kp O          &mt RIGHT_CONTROL RIGHT_BRACKET
 &kp LEFT_BRACE        &kp Z  &kp X  &kp C             &kp D  &kp V  &kp K        &kp H  &kp COMMA        &kp DOT  &kp SQT        &kp RIGHT_BRACE
-                                    &kp LEFT_CONTROL  &mo 5  &mo 2  &lt 1 SPACE  &mo 4  &kp RIGHT_SHIFT
+                                    &kp LEFT_CONTROL  &mo 5  &mo 2  &spc_nav NAV SPACE  &mo 4  &kp RIGHT_SHIFT
             >;
         };
 
