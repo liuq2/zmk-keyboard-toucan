@@ -27,6 +27,9 @@ config ZMK_SPLIT
 config ZMK_POINTING
     default y
 
+config RGBLED_WIDGET
+    default n
+
 config RGBLED_WIDGET_BATTERY_LEVEL_HIGH
     default 40
 
