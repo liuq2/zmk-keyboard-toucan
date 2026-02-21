@@ -491,9 +491,9 @@
         layer_6 {
             display-name = "2_5";
             bindings = <
-&bt BT_SEL 0      &kp LG(LA(LC(A)))  &kp LA(LC(LG(G)))  &kp LA(NUMBER_1)   &kp LA(NUMBER_2)  &kp LA(LC(LG(B)))  &kp HASH     &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON          &trans
+&bt BT_SEL 0      &kp LG(LA(LC(A)))  &kp LA(LC(LG(G)))  &kp LA(NUMBER_2)   &kp LA(NUMBER_1)  &kp LA(LC(LG(B)))  &kp HASH     &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON          &trans
 &kp LEFT_BRACKET  &trans             &trans             &trans             &trans            &trans             &kp EQUAL    &kp F2          &kp PLUS      &kp MINUS        &code_20           &trans
-&bt BT_SEL 1      &kp LG(L)          &kp LG(V)          &kp LA(LC(LG(H)))  &trans            &trans             &kp AT_SIGN  &kp DELETE      &kp SLASH     &kp QUESTION     &kp DOUBLE_QUOTES  &trans
+&bt BT_SEL 1      &kp LG(L)          &kp LG(V)          &kp LA(LC(LG(F)))  &trans            &trans             &kp AT_SIGN  &kp DELETE      &kp SLASH     &kp QUESTION     &kp DOUBLE_QUOTES  &trans
                                                         &trans             &trans            &trans             &trans       &trans          &trans
             >;
         };
