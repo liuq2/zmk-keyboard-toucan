@@ -481,9 +481,9 @@
         layer_5 {
             display-name = "left_2";
             bindings = <
-&kp LG(X)         &kp LG(LA(V))    &kp LG(C)  &kp LG(V)  &kp LC(LG(LA(I)))  &kp LC(LA(LG(E)))  &kp HASH     &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON          &trans
+&kp LG(X)         &kp LG(LA(V))    &kp LG(C)  &kp LG(V)  &kp LC(LG(LA(I)))  &kp LC(LA(LG(G)))  &kp HASH     &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON          &trans
 &code_24          &kp LC(LS(TAB))  &mkp MB4   &mkp LCLK  &mkp RCLK          &kp LC(TAB)        &kp EQUAL    &kp ENTER       &kp PLUS      &kp MINUS        &kp BACKSPACE      &trans
-&kp LC(LA(LEFT))  &studio_unlock   &mkp MB5   &kp TAB    &kp LEFT_ALT       &mo 2              &kp AT_SIGN  &kp DELETE      &kp SLASH     &kp QUESTION     &kp DOUBLE_QUOTES  &trans
+&kp LA(NUMBER_1)  &studio_unlock   &mkp MB5   &kp TAB    &kp LEFT_ALT       &mo 2              &kp AT_SIGN  &kp DELETE      &kp SLASH     &kp QUESTION     &kp DOUBLE_QUOTES  &trans
                                               &trans     &trans             &trans             &trans       &trans          &trans
             >;
         };
@@ -491,10 +491,10 @@
         layer_6 {
             display-name = "2_5";
             bindings = <
-&bt BT_SEL 0      &kp LG(LA(LC(A)))  &kp LA(LC(LG(G)))  &kp LA(NUMBER_2)   &kp LA(NUMBER_1)  &kp LA(LC(LG(B)))  &kp HASH     &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON          &trans
-&kp LEFT_BRACKET  &trans             &trans             &kp LC(LS(C))      &trans            &trans             &kp EQUAL    &kp F2          &kp PLUS      &kp MINUS        &code_20           &trans
-&bt BT_SEL 1      &kp LG(L)          &kp LG(V)          &kp LA(LC(LG(F)))  &trans            &trans             &kp AT_SIGN  &kp DELETE      &kp SLASH     &kp QUESTION     &kp DOUBLE_QUOTES  &trans
-                                                        &trans             &trans            &trans             &trans       &trans          &trans
+&bt BT_SEL 0      &kp LG(LA(LC(A)))  &kp LA(LC(LG(E)))  &kp UP_ARROW      &kp LA(NUMBER_2)   &kp LA(LC(LG(B)))  &kp HASH     &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON          &trans
+&kp LEFT_BRACKET  &kp LC(LEFT)       &kp LC(LS(TAB))    &kp DOWN          &kp LC(TAB)        &kp LC(RIGHT)      &kp EQUAL    &kp F2          &kp PLUS      &kp MINUS        &code_20           &trans
+&bt BT_SEL 1      &kp LG(L)          &kp LG(V)          &kp LA(LC(LEFT))  &kp LA(LG(LC(H)))  &trans             &kp AT_SIGN  &kp DELETE      &kp SLASH     &kp QUESTION     &kp DOUBLE_QUOTES  &trans
+                                                        &trans            &trans             &trans             &trans       &trans          &trans
             >;
         };
     };
