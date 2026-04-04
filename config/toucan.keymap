@@ -471,20 +471,20 @@
         layer_4 {
             display-name = "right_2";
             bindings = <
-&trans            &code_27  &kp LA(NUMBER_6)  &kp LS(F12)  &code_30   &kp LA(B)  &find_replace_03  &code_12          &kp RC(K)   &code_13          &trans  &trans
-&kp LEFT_BRACKET  &trans    &kp LA(D)         &kp F12      &kp LA(I)  &trans     &trans            &kp LA(NUMBER_3)  &kp RC(J)   &kp LA(NUMBER_3)  &trans  &trans
-&trans            &code_28  &code_29          &code_26     &code_25   &kp LA(C)  &kp LA(N5)        &code_11          &kp LA(N7)  &kp LA(N9)        &trans  &trans
-                                              &trans       &trans     &trans     &trans            &trans            &trans
+&trans            &code_27  &kp LA(NUMBER_6)  &kp LS(F12)  &code_30   &kp LA(B)         &find_replace_03  &code_12          &kp RC(K)   &code_13          &trans  &trans
+&kp LEFT_BRACKET  &trans    &kp LA(D)         &kp F12      &kp LA(I)  &kp LA(NUMBER_4)  &trans            &kp LA(NUMBER_3)  &kp RC(J)   &kp LA(NUMBER_3)  &trans  &trans
+&trans            &code_28  &code_29          &code_26     &code_25   &kp LA(C)         &kp LA(N5)        &code_11          &kp LA(N7)  &kp LA(N9)        &trans  &trans
+                                              &trans       &trans     &trans            &trans            &trans            &trans
             >;
         };
 
         layer_5 {
             display-name = "left_2";
             bindings = <
-&kp LG(X)          &kp LG(LA(V))    &kp LG(C)  &kp LG(V)  &kp LC(LG(LA(I)))  &kp LC(LA(LEFT))  &kp HASH     &kp UNDERSCORE  &kp ASTERISK    &kp EXCLAMATION  &kp COLON          &trans
-&code_24           &kp LC(LS(TAB))  &mkp MB4   &mkp LCLK  &mkp RCLK          &kp LC(TAB)       &kp EQUAL    &kp ENTER       &kp PLUS        &kp MINUS        &kp BACKSPACE      &trans
-&kp LC(LA(LG(E)))  &studio_unlock   &mkp MB5   &kp TAB    &kp LEFT_ALT       &mo 2             &kp AT_SIGN  &kp DELETE      &kp SLASH       &kp QUESTION     &kp DOUBLE_QUOTES  &trans
-                                               &trans     &trans             &trans            &trans       &msc SCRL_UP    &msc SCRL_DOWN
+&kp LG(X)          &kp LG(LA(V))    &kp LG(C)  &kp LG(V)  &kp LC(LG(LA(I)))  &kp LC(LA(LEFT))  &kp HASH     &kp UNDERSCORE  &kp ASTERISK  &kp EXCLAMATION  &kp COLON          &trans
+&code_24           &kp LC(LS(TAB))  &mkp MB4   &mkp LCLK  &mkp RCLK          &kp LC(TAB)       &kp EQUAL    &kp ENTER       &kp PLUS      &kp MINUS        &kp BACKSPACE      &trans
+&kp LC(LA(LG(E)))  &studio_unlock   &mkp MB5   &kp TAB    &kp LEFT_ALT       &mo 2             &kp AT_SIGN  &kp DELETE      &kp SLASH     &kp QUESTION     &kp DOUBLE_QUOTES  &trans
+                                               &trans     &trans             &trans            &trans       &trans          &trans
             >;
         };
 
